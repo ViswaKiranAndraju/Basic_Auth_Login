@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+    body{
+        font-family: 'Ubuntu', sans-serif;
+        background-size: cover;
+        background-image: url('cus.jpg');
+        color:white;
+    }
+    .left{
+        display: inline-block;
+        border-radius: 10px;
+        /* border: 2px solid rgb(155, 85, 85); */
+        position: absolute;
+        margin: 5px 20px;
+        top: 20px;
+        left:20px;
+    }
+    .mid{
+        display: block;
+        /* border: 2px solid grey; */
+        width: 45%;
+        margin:5px auto;
+        position: absolute  ;
+        top:20px;
+        left:400px;
+    }
+    .right{
+        display: inline-block;
+        /* border: 2px solid rgb(165, 38, 38); */
+        position: absolute;
+        margin: 5px 20px;
+        top: 20px;
+        right:20px;
+    }
+    .container .left img{
+        width:100px;
+        border-radius: 10px;
+    }
+    .left{
+        position: sticky;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(114, 114, 226);  
+    }
+    .mid li{
+        display: inline-block;
+    }
+    .mid li a{
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: none;  
+        padding:5px 40px;
+        color: rgb(12, 0, 82);
+    }
+    .mid li a:hover , .mid li a.active{
+        color:rgb(47, 0, 255);
+    }
+    .right .btn{
+        font-family: 'Ubuntu', sans-serif;
+        cursor:pointer;
+        padding: 2px 12px;
+        margin: 2px 10px;
+    }
+    .right .btn a{
+        text-decoration: none;
+    }
+    .formactive h3{
+        margin: 2px 2px;
+        padding:2px 2px;
+        display: block;
+        position: relative;
+        top:440px;
+        left:140px;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(28, 28, 122);
+        
+    }
+    .formactive input{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 20px 2px;
+        padding:2px 2px;
+        display: block;
+        position: relative;
+        top:450px;
+        left:100px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .formactive_btn{
+        font-family: 'Ubuntu', sans-serif;      
+        margin: 20px 2px;
+        padding:2px 2px;
+        display: block;
+        position: relative;
+        top:450px;
+        left:170px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="vk_logo.jpg" alt="">
+            <div>Viswa Kiran</div>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Motto</a></li>
+                <li><a href="#">Suggestion</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><a href="https://www.linkedin.com/" target="none">Linkedin</a></button>
+            <button class="btn">Call us</button>
+    </div>
+    <div class="formactive">
+        <form action="noaction.php">
+            <h3>Welcome</h3>
+            <div class="formactive">
+                <input type="text" name ="" placeholder="Enter your email">
+            </div>
+            <div class="formactive">
+                <input type="text" name ="" placeholder="Password">
+            </div>        
+            <button class="formactive_btn"type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
